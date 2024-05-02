@@ -31,14 +31,16 @@ function App() {
     <main>
       <div style={{
         position: 'absolute',
-        backgroundColor: 'red',
+        backgroundColor: 'white',
         borderRadius: '50%',
         opacity: '50%',
+        filter: 'blur(100px)',
         pointerEvents: 'none',
-        left: -20,
-        top: -20,
-        width: 40,
-        height: 40,
+        left: -100,
+        top: -100,
+        width: 200,
+        height: 200,
+        zIndex: -1000,
         transform: `translate(${position.x}px, ${position.y}px)`
       }}
       />
